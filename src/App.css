@@ -1,38 +1,345 @@
-.App {
-  text-align: center;
+*{
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  color: white;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover{
+  color: rgb(227, 117, 117);
+}
+.cardmain{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+.card{
+  height: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: cadetblue;
+  border-radius: 10px;
+  margin:0px  10px;
+  margin-top: 40px;
+
+}
+.cardimg{
+  height: 200px;
+  width: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center ;
+}
+.cardimg img{
+  height: 90%;
+  width: 90%;
+}
+.cardbut{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+h3{
+  color: rgb(56, 9, 244);
+}
+b{
+  color: rgb(237, 47, 69);
+  font-size: 20px;
+}
+p{
+  font-size: 18px;
+}
+.card:hover{
+  background-color: rgb(14, 223, 230)
+}
+.card:hover .cardimg{
+  height: 210px;
+  width: 305px;
+}
+.cart{
+  height: 480px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: cadetblue;
+  border-radius: 10px;
+  margin:0px  10px;
+  margin-top: 40px;
+}
+.cartimg{
+  height: 200px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.cartimg img{
+  height: 90%;
+  width: 90%;
+}
+.cart:hover{
+  background-color: rgb(14, 223, 230)
+}
+.cart:hover .cartimg{
+  height: 210px;
+  width: 335px;
+}
+.cartmain{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+.kmmain{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.kmcart{
+  height: fit-content;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: cadetblue;
+  border-radius: 10px;
+  margin:0px  10px;
+  margin-top: 40px;
+}
+.kmimg{
+  height: 250px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.kmimg img{
+  height: 90%;
+  width: 90%;
+}
+.kmcart:hover{
+  background-color: rgb(14, 223, 230)
+}
+.kmcart:hover .kmimg{
+  height: 260px;
+  width: 460px;
+}
+.kmrating{
+  height: 150px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.kmcom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 50px;
+  background-color: grey;
+}
+.favicon img{
+  height: 30px;
+  width: 40px;
+}
+.mainm{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img{
+  height: 100%;
+  width: 100%;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 40px;
+  height: 7vh;
+  width: 50px;
+  background-color: white;
+  border-radius: 35px;
+}
+.cartmsg{
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 30px;
+}
+.loginmain{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./login.jpg") no-repeat;
+  background-size: 100% 100%;
+  
+}
+.loginform{
+  height: 55%;
+  width: 30%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgb(116, 45, 15);
+}
+.emain .pass{
+  position: relative;
+}
+.emain input{
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+}
+.pass input{
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+}
+.check{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.reg{
+  width: 300px;
+  display: flex;
+  color: #F0F0F0;
+  justify-content:center ;
 }
+.loginform a{
+  text-decoration: none;
+  color: blue;
+}
+a:hover{
+  text-decoration: underline;
+}
+.btn button{
+  height: 40px;
+  width: 300px;
+  border-radius: 25px;
+}
+.signmain{
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./signup.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.signform{
+  height:70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: red;
+  position: relative;
+  border: 1px solid rgb(2, 2, 68);
+  backdrop-filter: blur(5px);
+}
+.regcheck{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #F0F0F0;
+}
+.regcheck input{
+  height: 30px;
+  width: 20px;
+}
+.signpass input{
+  width: 280px;
+  height: 40px;
+  border-radius: 25px;
+}
+.fa-user{
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  color: rgb(13, 11, 8);
+}
+.loginform .fa-lock{
+  position: absolute;
+  top: 106px;
+  right: 100px;
+  color: rgb(12, 8, 1);
+}
+.signform .fa-user{
+  position: absolute;
+  top: 30px;
+  right: 250px;
+  color: rgb(23, 18, 9);
+}
+.signform .fa-lock{
+  position: absolute;
+  top: 143px;
+  right: 250px;
+  color: rgb(23, 18, 9);
+}
+.signform .reg{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    width: 300px;
+    display: flex;
+    justify-content:center;
+    color: #F0F0F0;
+}
+.signform a{
+  color: #ff0019;
 }
